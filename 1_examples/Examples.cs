@@ -3,7 +3,8 @@
  */
 
 using System;
-using HttpWebRequest;
+// using System.Net;
+// using System.Net.Http;
 
 namespace Examples
 {
@@ -29,6 +30,7 @@ namespace Examples
       }
       */
 
+      /*
       public string Get(string uri)
       {
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
@@ -41,6 +43,7 @@ namespace Examples
           return reader.ReadToEnd();
         }
       }
+      */
 
       static void Main(string[] args)
       {
@@ -48,8 +51,8 @@ namespace Examples
         // Display the number of command line arguments.
         // Console.WriteLine(args.Length);
         // Get();
-        string url = @"https://api.stackexchange.com/2.2/answers?order=desc&sort=activity&site=stackoverflow";
-        Get(url);
+        // string url = @"https://api.stackexchange.com/2.2/answers?order=desc&sort=activity&site=stackoverflow";
+        // Get(url);
       }
     }
 }
