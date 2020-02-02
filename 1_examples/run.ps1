@@ -43,7 +43,7 @@ if (CheckCommand $csc){
 # Compile Example.cs
 
 function compile {
-  $command = "$csc /t:exe /out:Examples.exe Examples.cs"
+  $command = "$csc /nologo /t:exe /out:Examples.exe Examples.cs"
   Invoke-Expression $command
 }
 
