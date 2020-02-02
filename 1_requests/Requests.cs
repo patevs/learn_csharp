@@ -1,5 +1,5 @@
 /**
- *  1_examples/Examples.cs
+ *  1_requests/Requests.cs
  */
 
 using System;
@@ -7,7 +7,7 @@ using System.IO;
 using System.Net;
 // using System.Net.Http;
 
-namespace Examples
+namespace Requests
 {
     class Program
     {
