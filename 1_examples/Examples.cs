@@ -3,7 +3,8 @@
  */
 
 using System;
-// using System.Net;
+using System.IO;
+using System.Net;
 // using System.Net.Http;
 
 namespace Examples
@@ -28,8 +29,9 @@ namespace Examples
 
         Console.WriteLine(html);
       }
+      */
 
-      public string Get(string uri)
+      public static string Get(string uri)
       {
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
         request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
@@ -38,10 +40,11 @@ namespace Examples
         using(Stream stream = response.GetResponseStream())
         using(StreamReader reader = new StreamReader(stream))
         {
-          return reader.ReadToEnd();
+          string result = reader.ReadToEnd();
+          Console.WriteLine(result);
+          return result;
         }
       }
-      */
 
       static void Main(string[] args)
       {
@@ -49,8 +52,8 @@ namespace Examples
         // Display the number of command line arguments.
         // Console.WriteLine(args.Length);
         // Get();
-        // string url = @"https://api.stackexchange.com/2.2/answers?order=desc&sort=activity&site=stackoverflow";
-        // Get(url);
+        string url = @"https://api.stackexchange.com/2.2/answers?order=desc&sort=activity&site=stackoverflow";
+        Get(url);
       }
     }
 }
