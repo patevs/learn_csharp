@@ -1,3 +1,7 @@
+/**
+ *  0_hello_world/HelloWorld.cs
+ */
+
 using System;
 
 namespace HelloWorld
@@ -6,7 +10,11 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");    
+            Console.WriteLine("Hello World!");
+            // Display the number of command line arguments.
+            Console.WriteLine(args.Length);  
         }
     }
 }
+
+/* EOF */
