@@ -47,10 +47,11 @@ namespace Food
       {
         Console.WriteLine("\n --- FOOD DATABASE --- \n");
         // construct url
-        string app_id = "cdfcb58a";
-        string app_key = "567dc307d8be8fa2b06d58b0658a94cf";
-        string endpoint = "https://api.edamam.com/api/food-database/parser";
-        string uri = @endpoint + "?ingr=red%20apple&app_id=" + app_id + "&" + app_key;
+        // string app_id = "cdfcb58a";
+        // string app_key = "1bf534f78ce5ecb6542063ce18f2db89";
+        // string endpoint = "https://api.edamam.com/api/food-database/parser";
+        // string uri = @endpoint + "?ingr=red%20apple&app_id=" + app_id + "&app_key" + app_key;
+        string uri = @"https://api.edamam.com/api/food-database/parser?ingr=red%20apple&app_id=cdfcb58a&app_key=1bf534f78ce5ecb6542063ce18f2db89";
         GetRequest(uri);
       }
     }
