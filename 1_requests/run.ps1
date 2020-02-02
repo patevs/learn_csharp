@@ -1,5 +1,5 @@
 # ------------------ #
-# 1_examples/run.ps1 #
+# 1_requests/run.ps1 #
 # ------------------ #
 
 # Compile and execute a C# program
