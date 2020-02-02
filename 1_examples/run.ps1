@@ -27,7 +27,9 @@ Write-Host "  * Detecting C# Compiler Installation... " # -NoNewLine
 
 # Verify C# compiler is installed and available
 
-$csc = "C:\Windows\Microsoft.NET\Framework\v3.5\csc.exe"
+# $csc = "C:\Windows\Microsoft.NET\Framework\v3.5\csc.exe"
+$csc = "C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe"
+
 
 if (CheckCommand $csc){
     # https://stackoverflow.com/questions/6338015/how-do-you-execute-an-arbitrary-native-command-from-a-string
