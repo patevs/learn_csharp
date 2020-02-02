@@ -34,7 +34,7 @@ if (CheckCommand $csc){
     $command = "$csc /help | grep 'Compiler version'"
     $cscVersion = Invoke-Expression $command # Can use iex instead of Invoke-Expression
     Write-Host "  * C# Compiler: " -NoNewLine
-    Write-Host $cscVersion -ForegroundColor Green -NoNewLine
+    Write-Host $cscVersion -ForegroundColor Green # -NoNewLine
 } else {
     Write-Host "`n`n C# Compiler Installation Could Not Be Found! Exiting..." -ForegroundColor Red
     exit

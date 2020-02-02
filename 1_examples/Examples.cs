@@ -3,11 +3,13 @@
  */
 
 using System;
+using HttpWebRequest;
 
 namespace Examples
 {
     class Program
     {
+      /*
       public void Get() {
         Console.WriteLine("Making GET Request...");
         string html = string.Empty;
@@ -25,12 +27,29 @@ namespace Examples
 
         Console.WriteLine(html);
       }
+      */
+
+      public string Get(string uri)
+      {
+        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
+        request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
+
+        using(HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+        using(Stream stream = response.GetResponseStream())
+        using(StreamReader reader = new StreamReader(stream))
+        {
+          return reader.ReadToEnd();
+        }
+      }
+
       static void Main(string[] args)
       {
         // Console.WriteLine("Hello World!");
         // Display the number of command line arguments.
         // Console.WriteLine(args.Length);
-        Get();
+        // Get();
+        string url = @"https://api.stackexchange.com/2.2/answers?order=desc&sort=activity&site=stackoverflow";
+        Get(url);
       }
     }
 }
