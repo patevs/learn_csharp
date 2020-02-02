@@ -28,9 +28,7 @@ namespace Examples
 
         Console.WriteLine(html);
       }
-      */
 
-      /*
       public string Get(string uri)
       {
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
@@ -47,7 +45,7 @@ namespace Examples
 
       static void Main(string[] args)
       {
-        // Console.WriteLine("Hello World!");
+        Console.WriteLine("\n --- EXAMPLES --- \n");
         // Display the number of command line arguments.
         // Console.WriteLine(args.Length);
         // Get();
