@@ -12,6 +12,12 @@
 * [Quick Start Guide](https://www.tutorialspoint.com/csharp/csharp_quick_guide.htm)
 * [C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/)
 
+[]()
+
+* [`awesome-dotnet`](https://github.com/quozd/awesome-dotnet)
+* [`awesome-dotnet-core`](https://github.com/thangchung/awesome-dotnet-core)
+* [`dotnet-tools`](https://github.com/natemcmaster/dotnet-tools)
+
 ---
 
 ## Getting Started
