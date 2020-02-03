@@ -1,6 +1,6 @@
-# ------------------ #
-# 1_requests/run.ps1 #
-# ------------------ #
+# --------------------- #
+# 0_hello_world/run.ps1 #
+# --------------------- #
 
 # Compile and execute a C# program
 
@@ -12,7 +12,7 @@
 # $csc = "C:\Windows\Microsoft.NET\Framework\v3.5\csc.exe"
 $csc = "C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe"
 
-$filename = "Requests"
+$filename = "HelloWorld"
 
 # --------------------------------------------------------------------------
 
