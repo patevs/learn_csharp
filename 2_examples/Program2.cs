@@ -2,6 +2,8 @@
  * 2_examples/Program2.cs
  */
 
+// Source: http://www.newthinktank.com/2015/07/learn-c-one-video/
+
 using System;
 using System.Collections.Generic;
 using System.IO;

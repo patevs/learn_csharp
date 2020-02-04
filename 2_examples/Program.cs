@@ -2,6 +2,8 @@
  *  2_examples/Program.cs
  */
 
+// Source: http://www.newthinktank.com/2015/07/learn-c-one-video/
+
 // Use using to declare namespaces and functions we wish to use
 using System;
 using System.Collections.Generic;
